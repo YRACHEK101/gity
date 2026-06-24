@@ -1,0 +1,49 @@
+{
+  "name": "gity",
+  "version": "0.1.0",
+  "description": "Effortlessly manage multiple Git/GitHub identities (personal, work, freelance) on one machine using Git's native conditional includes and per-profile SSH keys.",
+  "keywords": [
+    "git",
+    "github",
+    "ssh",
+    "gitconfig",
+    "includeIf",
+    "multiple-accounts",
+    "identity",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Yahia Rachek",
+  "type": "module",
+  "bin": {
+    "gity": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "commander": "^12.1.0",
+    "picocolors": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.2.6"
+  }
+}
