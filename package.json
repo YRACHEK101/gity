@@ -1,6 +1,6 @@
 {
   "name": "gity-tool",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Effortlessly manage multiple Git/GitHub identities (personal, work, freelance) on one machine using Git's native conditional includes and per-profile SSH keys. Installs the `gity` command.",
   "keywords": [
     "git",
