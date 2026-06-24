@@ -58,17 +58,19 @@ If you commit to a work repo with your personal email — or push with the wrong
 `gity` is a standard global npm package — the command is identical everywhere:
 
 ```bash
-npm install -g gity
+npm install -g gity-tool
 ```
+
+> 📦 The npm package is **`gity-tool`**; the command it installs is **`gity`** (with `gity-tool` as an alias). Install once, type `gity`.
 
 **macOS / Linux** — if you get an `EACCES` permission error, either use a Node version manager (`nvm`) or:
 ```bash
-sudo npm install -g gity
+sudo npm install -g gity-tool
 ```
 
 **Windows** — run in **PowerShell** or **Command Prompt**:
 ```powershell
-npm install -g gity
+npm install -g gity-tool
 ```
 
 **Verify the install** (any OS):
@@ -239,15 +241,15 @@ rm ~/.gitconfig-work
 # 3. (optional) delete the key pair
 rm ~/.ssh/id_ed25519_work ~/.ssh/id_ed25519_work.pub
 ```
-Uninstall the tool itself with `npm uninstall -g gity`.
+Uninstall the tool itself with `npm uninstall -g gity-tool`.
 
 ---
 
 ## Development
 
 ```bash
-git clone git@github.com:YRACHEK101/gity.git
-cd gity
+git clone git@github.com:YRACHEK101/gity-tool.git
+cd gity-tool
 npm install
 npm run build      # compile TypeScript → dist/
 npm test           # 30 unit tests (Vitest)

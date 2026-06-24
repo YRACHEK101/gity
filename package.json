@@ -1,7 +1,7 @@
 {
-  "name": "gity",
+  "name": "gity-tool",
   "version": "0.1.0",
-  "description": "Effortlessly manage multiple Git/GitHub identities (personal, work, freelance) on one machine using Git's native conditional includes and per-profile SSH keys.",
+  "description": "Effortlessly manage multiple Git/GitHub identities (personal, work, freelance) on one machine using Git's native conditional includes and per-profile SSH keys. Installs the `gity` command.",
   "keywords": [
     "git",
     "github",
@@ -14,9 +14,18 @@
   ],
   "license": "MIT",
   "author": "Yahia Rachek",
+  "homepage": "https://github.com/YRACHEK101/gity-tool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YRACHEK101/gity-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YRACHEK101/gity-tool/issues"
+  },
   "type": "module",
   "bin": {
-    "gity": "./dist/index.js"
+    "gity": "./dist/index.js",
+    "gity-tool": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "files": [
